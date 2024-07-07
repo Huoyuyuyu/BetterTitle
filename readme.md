@@ -114,9 +114,9 @@
 
 `x` `y` 该文本相对原点的偏移（默认为0）
 
-`align` 该文本的对齐方式（可以是left、right、middle中的一个，默认为millde）
+`align` 该文本的对齐方式（可以是left、right、middle中的一个，默认为middle）
 
-`origin` 该文本的原点位置（可以是default、up、down、left、right、up-left、up-right、down、-left、down-right、center中的一个，默认为default，也就是原版位置）
+`origin` 该文本的原点位置（可以是default、up、down、left、right、up-left、up-right、down、down-left、down-right、center中的一个，默认为default，也就是原版位置）
 
 在x:0, y:0, align:"middle"时，改变origin，大致效果如下图:
 
