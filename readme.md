@@ -13,8 +13,6 @@
     - [显示玩家名](#显示玩家名)
 - [负空格字体](#负空格字体)
 
-
-
 ### 简介 
 
 一个基于负空格和着色器实现的**多文本操作库**
@@ -50,6 +48,11 @@
 *示例：*
 
     execute store result score PlayerNamePanel example.int run function title:new_panel
+    
+*在1.20.2及以下版本中，使用不同的返回方式：*
+
+    function title:new_panel
+    scoreboard players operation PlayerNamePanel example.int = panel_id title.io
 
 可以将函数的返回值存在一个你喜欢的计分板分数中，名字不一定是PlayerNamePanel，计分板也不一定是example.int，但最好是一个没人用到的计分板
 
