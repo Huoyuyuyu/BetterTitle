@@ -86,9 +86,9 @@
 
 `text` 输入的文本，需要一段原始json文本，**不可使用字体功能**（默认无）
 
-`font` 这部分文本使用的**字体**（默认为 title:default_mod，即原版字体）
+`font` 这部分文本使用的**字体**（默认为 minecraft:default_mod，即原版字体）
 
-`neg_font` 这部分文本使用的**负空格字体**，详见 [负空格字体](#负空格字体)（默认为 title:vanilla_neg）
+`neg_font` 这部分文本使用的**负空格字体**，详见 [负空格字体](#负空格字体)（默认为 minecraft:default_neg）
 
 ***
 
