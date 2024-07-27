@@ -216,7 +216,7 @@ tick函数：
 
 ```mcfunction
 
-scoreboard players operation @s title.panel_id = PlayerNamePanel example.int
+scoreboard players operation @a title.panel_id = PlayerNamePanel example.int
 
 ```
 
