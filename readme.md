@@ -47,12 +47,20 @@
 
 *示例：*
 
-    execute store result score PlayerNamePanel example.int run function title:new_panel
-    
+```mcfunction
+
+execute store result score PlayerNamePanel example.int run function title:new_panel
+
+```
+
 *在1.20.2及以下版本中，使用不同的返回方式：*
 
-    function title:new_panel
-    scoreboard players operation PlayerNamePanel example.int = panel_id title.io
+```mcfunction
+
+function title:new_panel
+scoreboard players operation PlayerNamePanel example.int = panel_id title.io
+
+```
 
 可以将函数的返回值存在一个你喜欢的计分板分数中，名字不一定是PlayerNamePanel，计分板也不一定是example.int，但最好是一个没人用到的计分板
 
@@ -62,7 +70,11 @@
 
 可以用以下命令切换玩家的面板：
 
-    scoreboard players operation @s title.panel_id = PlayerNamePanel example.int
+```mcfunction
+
+scoreboard players operation @s title.panel_id = PlayerNamePanel example.int
+
+```
 
 ***
 
@@ -153,8 +165,12 @@
 
 *示例：*
 
-    scoreboard players operation panel_id title.io = PlayerNamePanel example.int
-    function title:replace_panel
+```mcfunction
+
+scoreboard players operation panel_id title.io = PlayerNamePanel example.int
+function title:replace_panel
+
+```
 
 `panel_id` 一个特殊分数，值为将被更新内容的面板的指针
 
@@ -170,8 +186,12 @@
 
 init函数：
 
-    scoreboard objectives add example.int dummy
-    execute store result score PlayerNamePanel example.int run function title:new_panel
+```mcfunction
+
+scoreboard objectives add example.int dummy
+execute store result score PlayerNamePanel example.int run function title:new_panel
+
+```
 
 load函数：（或者写在init里也行，没啥影响）
 
@@ -188,13 +208,17 @@ load函数：（或者写在init里也行，没啥影响）
     }
     function title:new_part
     function title:new_text
-
+    
     scoreboard players operation panel_id title.io = PlayerNamePanel example.int
     function title:replace_panel
 
 tick函数：
 
-    scoreboard players operation @s title.panel_id = PlayerNamePanel example.int
+```mcfunction
+
+scoreboard players operation @s title.panel_id = PlayerNamePanel example.int
+
+```
 
 最终效果：
 
