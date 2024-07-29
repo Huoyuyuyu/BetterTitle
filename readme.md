@@ -211,7 +211,45 @@ tick函数：
 
 例如
 
+    data merge storage title:io {  \
+        text:'{"text":"1","color":"red"}',  \
+        font:"minecraft:default_mod",  \
+        neg_font:"minecraft:default_neg",  \
+        x: 0,  y: 10,  \
+        align:"middle",  \
+        origin:"center"  \
+    }
+    function title:new_text
 
+    data merge storage title:io {dy:17}
+    function title:new_text
+
+    data merge storage title:io {dy:17}
+    function title:new_text
+
+    data merge storage title:io {dy:17}
+    function title:new_text
+
+等效于
+
+    data merge storage title:io {  \
+        text:'{"text":"1","color":"red"}',  \
+        font:"minecraft:default_mod",  \
+        neg_font:"minecraft:default_neg",  \
+        x: 0,  y: 10,  \
+        align:"middle",  \
+        origin:"center"  \
+    }
+    function title:new_text
+
+    data merge storage title:io {y:17}
+    function title:new_text
+
+    data merge storage title:io {y:34}
+    function title:new_text
+
+    data merge storage title:io {y:51}
+    function title:new_text
 
 ## 负空格字体
 
