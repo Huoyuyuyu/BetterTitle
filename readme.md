@@ -102,34 +102,13 @@
 
 执行后，会将new_part函数添加的所有**部分**组合成一个**文本**
 
-（因为每个部分只能使用一种字体，所以需要用多个部分组成一个文本）
+（因为每个部分只能使用一种字体，所以需要用多个部分组成一个文本，且 new_text 本身也属于一个部分）
 
 并将这个文本放到屏幕指定位置
 
 每一个text都是独立的，互不影响
 
 *示例：*
-
-    data merge storage title:io {  \
-        x: 5,  y: -15,  \
-        align:"left",  \
-        origin:"up-left"  \
-    }
-    function title:new_text
-
-需要4个变量：
-
-`x` `y` 该文本相对原点的偏移（默认为0）
-
-`align` 该文本的对齐方式（可以是left、right、middle中的一个，默认为middle）
-
-`origin` 该文本的原点位置（可以是default、up、down、left、right、up-left、up-right、down、down-left、down-right、center中的一个，默认为default，也就是原版位置）
-
-在x:0, y:0, align:"middle"时，改变origin，大致效果如下图:
-
-![原点示意图](/image/原点示意图.png)
-
-也可以将两者结合起来
 
 *示例：*
 
@@ -144,8 +123,21 @@
         align:"left",  \
         origin:"up-left"  \
     }
-    function title:new_part
     function title:new_text
+
+需要**额外**4个变量：
+
+`x` `y` 该文本相对原点的偏移（默认为0）
+
+`align` 该文本的对齐方式（可以是left、right、middle中的一个，默认为middle）
+
+`origin` 该文本的原点位置（可以是default、up、down、left、right、up-left、up-right、down、down-left、down-right、center中的一个，默认为default，也就是原版位置）
+
+在x:0, y:0, align:"middle"时，改变origin，大致效果如下图:
+
+![原点示意图](/image/原点示意图.png)
+
+也可以将两者结合起来
 
 ***
 
