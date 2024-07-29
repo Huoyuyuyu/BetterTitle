@@ -84,15 +84,17 @@ scoreboard players operation @s title.panel_id = PlayerNamePanel example.int
 
 *示例：*
 
-    data merge storage title:io {  \
-        text:'[  \
-            {"text":"Name: ","color":"gray"},  \
-            {"selector":"@s","color":"dark_aqua"}  \
-        ]',  \
-        font:"minecraft:default",  \
-        neg_font:"minecraft:default_neg",  \
-    }
-    function title:new_part
+```mcfunction
+data merge storage title:io {  \
+    text:'[  \
+        {"text":"Name: ","color":"gray"},  \
+        {"selector":"@s","color":"dark_aqua"}  \
+    ]',  \
+    font:"minecraft:default",  \
+    neg_font:"minecraft:default_neg",  \
+}
+function title:new_part
+```
 
 需要3个变量：
 
