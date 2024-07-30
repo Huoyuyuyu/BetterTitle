@@ -180,7 +180,6 @@ load函数：
         align:"left",  \
         origin:"up-left"  \
     }
-    function title:new_part
     function title:new_text
     
     scoreboard players operation panel_id title.io = PlayerNamePanel example.int
