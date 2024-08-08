@@ -23,6 +23,8 @@
 
 作者：火昱Huoyu
 
+展示视频：[BetterTitle 原版文本库 展示视频](https://www.bilibili.com/video/BV1AcvyeyECH)
+
 ## 接口
 
 该文本库目前有 4 个核心接口函数
