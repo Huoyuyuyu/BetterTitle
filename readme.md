@@ -112,8 +112,6 @@
 
 *示例：*
 
-*示例：*
-
     data merge storage title:io {  \
         text:'[  \
             {"text":"Name: ","color":"gray"},  \
