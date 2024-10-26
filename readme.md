@@ -167,7 +167,7 @@
 load函数：
 
     scoreboard objectives add example.int dummy
-    execute unless score ExamplePanel example.int matches 0.. store result score PlayerNamePanel example.int run function title:new_panel
+    execute unless score PlayerNamePanel example.int matches 0.. store result score PlayerNamePanel example.int run function title:new_panel
     
     data merge storage title:io {  \
         text:'[  \
