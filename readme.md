@@ -51,12 +51,7 @@
 
 *示例：*
 
-    execute store result score PlayerNamePanel example.int run function title:new_panel
-
-*在1.20.2及以下版本中，使用不同的返回方式：*
-
-    function title:new_panel
-    scoreboard players operation PlayerNamePanel example.int = panel_id title.io
+    function title:new_panel {id: "PlayerNamePanel example.int"}
 
 可以将函数的返回值存在一个你喜欢的计分板分数中，名字不一定是PlayerNamePanel，计分板也不一定是example.int，但最好是一个没人用到的计分板
 
@@ -167,7 +162,7 @@
 load函数：
 
     scoreboard objectives add example.int dummy
-    execute unless score PlayerNamePanel example.int matches 0.. store result score PlayerNamePanel example.int run function title:new_panel
+    function title:new_panel {id: "PlayerNamePanel example.int"}
     
     data merge storage title:io {  \
         text:'[  \
@@ -246,7 +241,7 @@ tick函数：
 
 在创建一个新文本部分时，需要与原字体配套的负空格字体
 
-文本库资源包中已有的负空格字体组合：
+本库资源包中**已有**的负空格字体组合：
 
 `default_mod` 与 `default_neg`（原版未开启 “强制使用unicode字体” 时的字体）
 
