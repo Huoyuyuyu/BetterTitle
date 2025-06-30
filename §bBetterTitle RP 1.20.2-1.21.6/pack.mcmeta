@@ -1,0 +1,16 @@
+{
+    "pack": {
+        "pack_format": 34,
+        "supported_formats": [18, 63],
+        "description":" §9§l火昱制作 §8§l交流群§7§l162786030§r\n 原版文本ui支持库"
+    },
+    "overlays": {
+        "注释":"原资源包版本v1202-1215",
+        "entries": [
+            {
+                "directory": "v1216",
+                "formats": [56, 63]
+            }
+        ]
+    }
+}

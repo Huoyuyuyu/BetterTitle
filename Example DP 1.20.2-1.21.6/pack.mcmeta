@@ -1,0 +1,24 @@
+{
+    "pack": {
+        "pack_format": 48,
+        "supported_formats": [18, 80],
+        "description":" §9§l火昱制作 §8§l交流群§7§l162786030"
+    },
+    "overlays": {
+        "注释":"原数据包版本v1203-1206",
+        "entries": [
+            {
+                "directory": "v1215-1216",
+                "formats": [62, 80]
+            },
+            {
+                "directory": "v1210-1214",
+                "formats": [48, 61]
+            },
+            {
+                "directory": "v1202",
+                "formats": [18, 18]
+            }
+        ]
+    }
+}
